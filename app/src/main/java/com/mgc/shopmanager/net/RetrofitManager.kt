@@ -5,6 +5,7 @@ package com.galanz.rxretrofit.network
 
 import com.google.gson.Gson
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
+import com.mgc.shopmanager.base.Datas
 import com.mgc.shopmanager.net.BaseUrlInterceptor
 import com.mgc.shopmanager.net.LenientGsonConverterFactory
 import com.mgc.shopmanager.utils.LogUtil
@@ -17,7 +18,6 @@ object RetrofitManager {
 
     val reqApi by lazy {
 
-        LogUtil.d("mgc", "RetrofitManager lazy init")
         //日志拦截器
         var httpLoggingInterceptor = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
         //Okhttp对象
@@ -27,7 +27,7 @@ object RetrofitManager {
             .build()
         var gson = Gson()
         val retrofit =
-            Retrofit.Builder().baseUrl("")
+            Retrofit.Builder().baseUrl(Datas.url)
                 .client(okHttpClient)
                 .addConverterFactory(LenientGsonConverterFactory.create(gson))
                 .addCallAdapterFactory(CoroutineCallAdapterFactory())

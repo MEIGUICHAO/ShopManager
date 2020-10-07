@@ -8,10 +8,6 @@ import java.lang.Exception
 
 abstract class BaseViewModel : ViewModel(), LifecycleObserver {
 
-    protected val datas: MutableLiveData<List<BaseBean>> by lazy { MutableLiveData<List<BaseBean>>().also { launchUI(loadDatas()) } }
-
-    abstract fun loadDatas(): suspend CoroutineScope.() -> Unit
-
     private val error by lazy { MutableLiveData<Exception>() }
     private val finally by lazy { MutableLiveData<Int>() }
 
