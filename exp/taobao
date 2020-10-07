@@ -19,3 +19,30 @@ https://api.chadianshang2.com/pc/keyword/getRelatedWordList
 post{keyword: "文胸", cateId: "1625"}
 
 https://s.taobao.com/search?data-key=sort&data-value=default&ajax=true&_ksTS=1601432789650_730&callback=jsonp731&ie=utf8&initiative_id=staobaoz_20200930&stats_click=search_radio_all%3A1&js=1&imgfile=&q=%E5%B9%BF%E5%9C%BA%E8%88%9E%E5%A5%B3%E9%9E%8B&suggest=0_4&_input_charset=utf-8&wq=%E5%B9%BF%E5%9C%BA%E8%88%9E&suggest_query=%E5%B9%BF%E5%9C%BA%E8%88%9E&source=suggest
+public void TBLogin() {
+    singleThreadExecutor.execute(new Runnable() {
+        @Override
+        public void run() {
+            try {
+                Connection connect = Jsoup.connect("https://login.taobao.com/");
+                // 带参数开始
+                connect.data("TPL_username", "大王派我来巡山23333:鬼鬼");
+                connect.data("TPL_password", "m12345678");
+                connect.method(Connection.Method.POST);
+                Connection.Response execute = connect.execute();
+                Map<String, String> cookies = execute.cookies();
+                String cookie = cookies.toString();
+                cookie = cookie.substring(cookie.indexOf("{") + 1, cookie.lastIndexOf("}"));
+                cookie = cookie.replaceAll(",", ";");
+                SharedPreferencesUtils.putValue(Constants.Cookies, cookie);
+                LogUtils.e("login success");
+                LogUtils.e(cookie);
+            } catch (Exception e) {
+
+                LogUtils.e(e.toString());
+
+            }
+        }
+    });
+
+}
