@@ -1,0 +1,21 @@
+淘宝标题:
+下拉词
+https://suggest.taobao.com/sug?code=utf-8&q="关键词"&_ksTS=1601367020518_215&callback=jsonp216&k=1&area=c2c&bucketid=13
+
+
+
+淘数据类目关键词
+https://www.taosj.com/data/industry/category/search/list?name="关键词"
+
+淘数据关键词解析以及关相关词推荐!!!淘数据免费版有次数限制
+//pc网址：https://www.taosj.com/tool/ztc.htm#wordResolve?word=%E6%96%87%E8%83%B8%E5%A5%B3%E8%81%9A%E6%8B%A2%E5%B0%8F%E8%83%B8&fromDate=&toDate=
+https://www.taosj.com/restapi/train/sources/keywords/queryWordsData?word=%E5%B9%BF%E5%9C%BA%E8%88%9E
+pv展现指数（多少人看到），click点击指数，ctr点击率，coverage转化率，cpc市场均价，竞争度competition，trendpv搜索趋势，roi（投资回报率）
+
+关键字查询，蓝海词（10词）
+https://api.chadianshang2.com/pc/keyword/getCategoryList
+post{keyword: "文胸"}
+https://api.chadianshang2.com/pc/keyword/getRelatedWordList
+post{keyword: "文胸", cateId: "1625"}
+
+https://s.taobao.com/search?data-key=sort&data-value=default&ajax=true&_ksTS=1601432789650_730&callback=jsonp731&ie=utf8&initiative_id=staobaoz_20200930&stats_click=search_radio_all%3A1&js=1&imgfile=&q=%E5%B9%BF%E5%9C%BA%E8%88%9E%E5%A5%B3%E9%9E%8B&suggest=0_4&_input_charset=utf-8&wq=%E5%B9%BF%E5%9C%BA%E8%88%9E&suggest_query=%E5%B9%BF%E5%9C%BA%E8%88%9E&source=suggest
