@@ -14,11 +14,23 @@ pv展现指数（多少人看到），click点击指数，ctr点击率，coverag
 
 关键字查询，蓝海词（10词）
 https://api.chadianshang2.com/pc/keyword/getCategoryList
-post{keyword: "文胸"}
+post{keyword: ""}
 https://api.chadianshang2.com/pc/keyword/getRelatedWordList
-post{keyword: "文胸", cateId: "1625"}
+post{keyword: "", cateId: "1625"}
 
 https://s.taobao.com/search?data-key=sort&data-value=default&ajax=true&_ksTS=1601432789650_730&callback=jsonp731&ie=utf8&initiative_id=staobaoz_20200930&stats_click=search_radio_all%3A1&js=1&imgfile=&q=%E5%B9%BF%E5%9C%BA%E8%88%9E%E5%A5%B3%E9%9E%8B&suggest=0_4&_input_charset=utf-8&wq=%E5%B9%BF%E5%9C%BA%E8%88%9E&suggest_query=%E5%B9%BF%E5%9C%BA%E8%88%9E&source=suggest
+https://s.taobao.com/search?data-key=sort&data-value=sale-desc&ajax=true&_ksTS=1602140588674_1581&callback=jsonp1582&q=%E8%BF%9E%E8%A1%A3%E8%A3%99%E5%A5%B3%E7%A7%8B%E5%AD%A3&imgfile=&commend=all&ssid=s5-e&search_type=item&sourceId=tb.index&spm=a21bo.2017.201856-taobao-item.1&ie=utf8&initiative_id=tbindexz_20170306&sort=sale-desc
+
+
+cookie: hng=CN%7Czh-CN%7CCNY%7C156; ali_ab=116.25.41.185.1552527712178.4; _uab_collina=155296220219425056146945; x=e%3D1%26p%3D*%26s%3D0%26c%3D0%26f%3D0%26g%3D0%26t%3D0%26__ll%3D-1%26_ato%3D0; thw=cn; tracknick=%5Cu8611%5Cu83C7%5Cu6D77%5Cu5CB8%5Cu6885%5Cu5E72%5Cu83DC; tg=0; miid=941350871299775747; enc=XPcGi30VUTWYb60gGE%2BCCZce14OLE0zUblUt3bov9OTtwsLgbMKSesPQsG5xim9nj%2FGcQTDfzY%2BGJpxo8E9fbw%3D%3D; sgcookie=EMSTqBWuKQHQRug57%2FjLf; _cc_=V32FPkk%2Fhw%3D%3D; cna=HXTCFx3oz08CAXQG6kKaW9aJ; UM_distinctid=1746d16b47721e-0bc1031dead47f-f7b1332-1fa400-1746d16b478b87; name=https://www.dianzhentan.com/dzt_cj/?type=update; CNZZDATA1277450732=2088128492-1562232353-https%253A%252F%252Fwww.taobao.com%252F%7C1602136758; t=45ca5b9f726c777936ef77c0dcfba18b; v=0; _tb_token_=e1108f77481bb; _m_h5_tk=2f8d6bd26a54eecdd115e957e95e0132_1602148124549; _m_h5_tk_enc=93dfecaf6e71671265febd8831fe9cd1; xlly_s=1; alitrackid=www.taobao.com; lastalitrackid=www.taobao.com; JSESSIONID=91C69854245F8B580FE59ACC8DF1EC66; tfstk=czlVBba_0IdqL8F6pSNNhAWJYkwAaB0mS_zQnAu5-DYd8C2aYs4fXzY5Xzz_vQ2c.; l=eBjxBFnlvmviUNEhBO5CFurza77T4IRb8sPzaNbMiInca6ThtFGrLNQ48K1kSdtjgtfXyetyNxVOSRCbun4dg2HvCbKrCyCkJxJ6-; isg=BHh4k4OZU6VBP7zUCiE3UzL-SSYK4dxrhpOXd7LpH7NmzRm3WvHS-QGrhcX9nZRD
+referer: https://s.taobao.com/search?ie=utf8&initiative_id=staobaoz_20201008&stats_click=search_radio_all%3A1&js=1&imgfile=&q=%E5%A5%B3%E7%A7%8B%E5%AD%A3%E8%BF%9E%E8%A1%A3%E8%A3%99&suggest=0_1&_input_charset=utf-8&wq=%E8%BF%9E%E8%A1%A3%E8%A3%99%E5%A5%B3%E7%A7%8B%E5%AD%A3&suggest_query=%E8%BF%9E%E8%A1%A3%E8%A3%99%E5%A5%B3%E7%A7%8B%E5%AD%A3&source=suggest
+sec-fetch-dest: script
+sec-fetch-mode: no-cors
+sec-fetch-site: same-origin
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36
+
+
+
 public void TBLogin() {
     singleThreadExecutor.execute(new Runnable() {
         @Override

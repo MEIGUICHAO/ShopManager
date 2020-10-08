@@ -1,10 +1,13 @@
 package com.mgc.shopmanager
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import androidx.lifecycle.Observer
 import com.mgc.shopmanager.base.BaseViewModelActivity
+import com.mgc.shopmanager.base.Constants
+import com.mgc.shopmanager.utils.LogUtil
+import com.mgc.shopmanager.utils.SPUtils
 import com.mgc.shopmanager.vm.TestViewModel
+import com.mgc.webviewjshelper.helper.WebViewHelper
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseViewModelActivity<TestViewModel>() {
 
@@ -16,6 +19,9 @@ class MainActivity : BaseViewModelActivity<TestViewModel>() {
     }
 
     override fun initView() {
+        WebViewHelper.initWb(webView)
+//        LogUtil.d("cookie:${SPUtils.getValue(Constants.Cookies)}")
+//        webView.loadUrl("http://taobao.com/")
     }
 
     override fun getLayout(): Int = R.layout.activity_main
