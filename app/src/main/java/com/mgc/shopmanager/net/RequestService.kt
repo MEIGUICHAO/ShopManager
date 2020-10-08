@@ -11,19 +11,50 @@ import retrofit2.http.*
 interface RequestService {
 
     @GET("/sug")
-    suspend fun getTBXialaSuggest(@Query("q") shop:String,@Query("code") code:String = "utf-8",@Query("callback") callback:String ="jsonp216",@Query("area") area:String = "c2c"):ResponseData<String>
+    suspend fun getTBXialaSuggest(
+        @Query("q") shop: String,
+        @Query("code") code: String = "utf-8",
+        @Query("callback") callback: String = "jsonp216",
+        @Query("area") area: String = "c2c"
+    ): ResponseData<String>
 
-//    &imgfile=&commend=all&ssid=s5-e&search_type=item&sourceId=tb.index&spm=a21bo.2017.201856-taobao-item.1
-    @Headers("urlname:${Datas.stb}","referer:${Datas.referer}","sec-fetch-dest:script","sec-fetch-mode:no-cors","sec-fetch-site:same-origin","user-agent:${Constants.UserAgentString}")
+    //    &imgfile=&commend=all&ssid=s5-e&search_type=item&sourceId=tb.index&spm=a21bo.2017.201856-taobao-item.1
+    @Headers(
+        "urlname:${Datas.stb}",
+        "referer:${Datas.referer}",
+        "sec-fetch-dest:script",
+        "sec-fetch-mode:no-cors",
+        "sec-fetch-site:same-origin",
+        "user-agent:${Constants.UserAgentString}"
+    )
     @GET("/search")
-    suspend fun getTitleKeyWord(@Query("q") shop:String,@Query("wq") wq:String,@Query("suggest_query") suggest_query:String
-    ,@Query("data-key") datakey:String ="sale-desc",@Query("ajax") ajax:String = "true"
-    ,@Query("_ksTS") _ksTS:String ="${System.currentTimeMillis()}_744",@Query("callback") callback:String = "jsonp745"
+    suspend fun getTitleKeyWord(
+        @Query("q") shop: String,
+        @Query("wq") wq: String,
+        @Query("suggest_query") suggest_query: String
+        ,
+        @Query("data-key") datakey: String = "sale-desc",
+        @Query("ajax") ajax: String = "true"
+        ,
+        @Query("_ksTS") _ksTS: String = "${System.currentTimeMillis()}_744",
+        @Query("callback") callback: String = "jsonp745"
 //   ,@Query("_ksTS") _ksTS:String ="1602137866634_744",@Query("callback") callback:String = "jsonp745"
-    ,@Query("ie") ie:String ="utf8",@Query("initiative_id") initiative_id:String = "staobaoz_20201008",@Query("stats_click") stats_click:String = "search_radio_all%3A1"
-    ,@Query("js") js:String ="1",@Query("_input_charset") _input_charset:String = "utf-8",@Query("source") source:String = "suggest"
-    ,@Query("imgfile") imgfile:String ="",@Query("commend") commend:String = "all",@Query("ssid") ssid:String = "s5-e",@Query("search_type") search_type:String = "item",@Query("sourceId") sourceId:String = "tb.index",@Query("spm") spm:String = "a21bo.2017.201856-taobao-item.1"
-    ):ResponseData<String>
+        ,
+        @Query("ie") ie: String = "utf8",
+        @Query("initiative_id") initiative_id: String = "staobaoz_20201008",
+        @Query("stats_click") stats_click: String = "search_radio_all%3A1"
+        ,
+        @Query("js") js: String = "1",
+        @Query("_input_charset") _input_charset: String = "utf-8",
+        @Query("source") source: String = "suggest"
+        ,
+        @Query("imgfile") imgfile: String = "",
+        @Query("commend") commend: String = "all",
+        @Query("ssid") ssid: String = "s5-e",
+        @Query("search_type") search_type: String = "item",
+        @Query("sourceId") sourceId: String = "tb.index",
+        @Query("spm") spm: String = "a21bo.2017.201856-taobao-item.1"
+    ): ResponseData<String>
 //    https://subway.simba.taobao.com/openapi/param2/1/gateway.subway/traffic/cate/popular/word$
 //    wordStatus: 1
 //    cateId: 201273466
@@ -37,15 +68,52 @@ interface RequestService {
 //{"custId":null,"result":[{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"54687.909792415776","wordStatus":"1","word":"无线蓝牙低音炮手机外小音响","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"17733.067354776336","wordStatus":"1","word":"迷你小唱机便携式户外音响","seNumChain":"0E-19"},{"adgroupCntIndex":"354.5103542429347","avgPrice":"106","seNumIndex":"13768.760370002898","wordStatus":"1","word":"华为freebudspro","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"10855.983237061126","wordStatus":"1","word":"震楼反击小音响","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"9013.13081553448","wordStatus":"1","word":"emberton蓝牙音箱","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"8289.888956415121","wordStatus":"1","word":"西瓜视频音响","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"7860.065329970831","wordStatus":"1","word":"15寸户外演出音响套装","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"6719.083353338508","wordStatus":"1","word":"莓用手机","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"5550.2859739186","wordStatus":"1","word":"gk12-1音箱","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"4922.455991450919","wordStatus":"1","word":"震楼器物","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"4758.449361086057","wordStatus":"1","word":"无限蓝牙低音炮迷你小音响","seNumChain":"0E-19"},{"adgroupCntIndex":"1548.8456242281002","avgPrice":"91","seNumIndex":"4633.925439471319","wordStatus":"1","word":"天猫精灵cc mini","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"4294.638242169514","wordStatus":"1","word":"15寸演出音响套装","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"4289.68120022119","wordStatus":"1","word":"蓝牙小音响便携式小型家用客厅","seNumChain":"0E-19"},{"adgroupCntIndex":"91.09364122277084","avgPrice":"30","seNumIndex":"3784.2520062852027","wordStatus":"1","word":"in糖2","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"3760.2298913867344","wordStatus":"1","word":"房式ktv","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"3482.5010008340637","wordStatus":"1","word":"麦克风氛围灯","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"3465.9062432695246","wordStatus":"1","word":"宅男必备","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"3465.0764629974024","wordStatus":"1","word":"无线蓝牙低音炮手机外小音箱","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"3327.2760892078445","wordStatus":"1","word":"立体声三分频广场音箱","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"3242.5462118280084","wordStatus":"1","word":"无线hifi发烧便携音箱","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"3028.857372760917","wordStatus":"1","word":"有线有源重低音炮游戏笔记本","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"2987.2486478736864","wordStatus":"1","word":"华为freego","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"2924.813388489984","wordStatus":"1","word":"广场舞音箱户外带话筒户外","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"2884.840622119744","wordStatus":"1","word":"利维坦电玩","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"2874.0127314873544","wordStatus":"1","word":"大型演出音响套装","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"2644.7613773122057","wordStatus":"1","word":"喜多宝涅槃","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"2508.688879645241","wordStatus":"1","word":"无线蓝牙迷你时钟音响闹钟","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"2412.59687246671","wordStatus":"1","word":"网易云留声机","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"2298.020084673829","wordStatus":"1","word":"大型户外线阵音响","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"2225.1996490690362","wordStatus":"1","word":"几光情景蓝牙音响","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"2195.0529681701655","wordStatus":"1","word":"奇声户外广场舞音箱手提便携","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"2148.9792425658893","wordStatus":"1","word":"追剧神器创意","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"2065.1570511261734","wordStatus":"1","word":"笔记本音箱插卡","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"2036.6418861429236","wordStatus":"1","word":"双人卡随身听","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"1968.6757805942032","wordStatus":"1","word":"婚庆户外演出音响套装","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"1955.2447876693102","wordStatus":"1","word":"爱 奇艺vip","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"1950.207682725733","wordStatus":"1","word":"大音箱 家用型","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"1927.5374291232174","wordStatus":"1","word":"刺猬","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"1883.8608761860437","wordStatus":"1","word":"知复音箱","seNumChain":"0E-19"},{"adgroupCntIndex":"0.1186444502069417","avgPrice":null,"seNumIndex":"1878.8199589515277","wordStatus":"1","word":"gental monster","seNumChain":"0E-19"}],"cause":null,"errors":[],"analyseTraceId":null,"illogic":null,"memberId":null,"code":"200","msg":null,"success":true,"innerMsg":null}
 
 
-    @Headers("urlname:${Datas.ztc}","user-agent:${Constants.UserAgentString}","authority:subway.simba.taobao.com","content-type:application/x-www-form-urlencoded; charset=UTF-8","origin:https://subway.simba.taobao.com"
-    ,"referer:https://subway.simba.taobao.com/?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv","sec-fetch-dest: empty","sec-fetch-mode: cors","sec-fetch-site: same-origin","x-requested-with: XMLHttpRequest")
+    @Headers(
+        "urlname:${Datas.ztc}",
+        "user-agent:${Constants.UserAgentString}",
+        "authority:subway.simba.taobao.com",
+        "content-type:application/x-www-form-urlencoded; charset=UTF-8",
+        "origin:https://subway.simba.taobao.com"
+        ,
+        "referer:https://subway.simba.taobao.com/?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv",
+        "sec-fetch-dest: empty",
+        "sec-fetch-mode: cors",
+        "sec-fetch-site: same-origin",
+        "x-requested-with: XMLHttpRequest"
+    )
+    @FormUrlEncoded
     @POST("/openapi/param2/1/gateway.subway/traffic/word/category$")
-    suspend fun getZTCCategory(@Body ztcCatalogBodyBean: ZTCCatalogBodyBean): ResponseData<String>
+    suspend fun getZTCCategory(@Field("word") word: String,@Field("_referer") _referer: String = "/tool/traffic-analysis/index?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv&word=${Datas.shopName}&tabValue=trend"
+    ,@Field("isAjaxRequest") isAjaxRequest:String="true",@Field("sla") sla:String="json",@Field("token") token:String="f635fa38"): ResponseData<String>
 
 
-    @Headers("urlname:${Datas.ztc}","user-agent:${Constants.UserAgentString}","authority:subway.simba.taobao.com","content-type:application/x-www-form-urlencoded; charset=UTF-8","origin:https://subway.simba.taobao.com"
-        ,"referer:https://subway.simba.taobao.com/?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv","sec-fetch-dest: empty","sec-fetch-mode: cors","sec-fetch-site: same-origin","x-requested-with: XMLHttpRequest")
+
+    @Headers(
+        "urlname:${Datas.ztc}",
+        "user-agent:${Constants.UserAgentString}",
+        "authority:subway.simba.taobao.com",
+        "content-type:application/x-www-form-urlencoded; charset=UTF-8",
+        "origin:https://subway.simba.taobao.com"
+        ,
+        "referer:https://subway.simba.taobao.com/?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv",
+        "sec-fetch-dest: empty",
+        "sec-fetch-mode: cors",
+        "sec-fetch-site: same-origin",
+        "x-requested-with: XMLHttpRequest"
+    )
+    @FormUrlEncoded
     @POST("/openapi/param2/1/gateway.subway/traffic/related/word$")
-    suspend fun getZTCRelatedWord():ResponseData<String>
+    suspend fun getZTCRelatedWord(@Field("word") word: String,@Field("wordStatus") wordStatus:String,@Field("cateId") cateId: String,@Field("_referer") _referer: String = "/tool/traffic-analysis/index?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv&word=${Datas.shopName}&tabValue=trend"
+    ,@Field("isAjaxRequest") isAjaxRequest:String="true",@Field("sla") sla:String="json",@Field("token") token:String="f635fa38"): ResponseData<String>
+
+    @Headers(
+        "urlname:${Datas.ztc}",
+        "user-agent:${Constants.UserAgentString}",
+        "authority:subway.simba.taobao.com",
+        "origin:https://subway.simba.taobao.com",
+        "referer:https://subway.simba.taobao.com/"
+    )
+    @GET("/bpenv/getLoginUserInfo.htm")
+    suspend fun getLoginUserInfo(): ResponseData<String>
 
 }

@@ -23,9 +23,10 @@ class MainActivity : BaseViewModelActivity<TestViewModel>() {
     }
 
     override fun initView() {
+//        SPUtils.putValue(Constants.Cookies,Datas.cookie)
         WebViewHelper.initWb(webView)
 //        LogUtil.d("cookie:${SPUtils.getValue(Constants.Cookies)}")
-//        webView.loadUrl("http://taobao.com/")
+        webView.loadUrl("https://www.taobao.com/?spm=a21bo.2017.201857.1.5af911d98BHoqC")
     }
 
     override fun getLayout(): Int = R.layout.activity_main

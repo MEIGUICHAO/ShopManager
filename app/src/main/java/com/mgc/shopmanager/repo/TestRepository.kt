@@ -13,13 +13,10 @@ import java.text.MessageFormat
 class TestRepository:BaseRepository() {
 
     suspend fun getDatas():ResponseData<String> = request {
-        RetrofitManager.urlInterceptor.setCookie(SPUtils.getValue(Constants.Cookies))
-//        RetrofitManager.reqApi.getTitleKeyWord("连衣裙女秋季","连衣裙女秋季","连衣裙女秋季")
-        val ztcCatalogBodyBean = ZTCCatalogBodyBean()
-        ztcCatalogBodyBean.setWord("连衣裙")
-        ztcCatalogBodyBean.set_referer(MessageFormat.format(Datas.ZTCReferer,"连衣裙"))
-        LogUtil.d("ztcCatalogBodyBean:${ztcCatalogBodyBean}")
-        RetrofitManager.reqApi.getZTCCategory(ztcCatalogBodyBean)
+//        RetrofitManager.urlInterceptor.setCookie(SPUtils.getValue(Constants.Cookies))
+        RetrofitManager.reqApi.getTitleKeyWord("连衣裙女秋季","连衣裙女秋季","连衣裙女秋季")
+//        RetrofitManager.reqApi.getZTCRelatedWord(Datas.shopName,"1","50023504")
+//        RetrofitManager.reqApi.getLoginUserInfo()
 
     }
 

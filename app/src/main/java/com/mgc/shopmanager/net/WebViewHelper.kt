@@ -2,9 +2,15 @@ package com.mgc.webviewjshelper.helper
 
 import android.annotation.SuppressLint
 import android.graphics.Bitmap
+import android.net.http.SslError
+import android.os.Build
 import android.webkit.*
 import com.mgc.shopmanager.base.Constants
 import com.mgc.shopmanager.utils.SPUtils
+import java.lang.Compiler.enable
+
+
+
 
 
 object WebViewHelper {
@@ -39,6 +45,14 @@ object WebViewHelper {
         // 设置webview加载的页面的模式,缩放至屏幕的大小
         mWebView.getSettings().setLoadWithOverviewMode(true)
         mWebView.getSettings().setUserAgentString(Constants.UserAgentString)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            mWebView.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW)
+        }
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//            val cookieManager = CookieManager.getInstance()
+//            cookieManager.setAcceptThirdPartyCookies(mWebView, true)
+//        }
+
 
 
 
@@ -67,6 +81,15 @@ object WebViewHelper {
 //                view?.loadUrl(getHtmlContentStr)
 
                 super.onPageFinished(view, url)
+            }
+
+
+            override fun onReceivedSslError(
+                view: WebView?,
+                handler: SslErrorHandler?,
+                error: SslError?
+            ) {
+                handler?.proceed()
             }
 
             override fun onReceivedError(

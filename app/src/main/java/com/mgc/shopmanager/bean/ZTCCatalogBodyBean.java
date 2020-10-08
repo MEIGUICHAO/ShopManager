@@ -57,5 +57,5 @@ public class ZTCCatalogBodyBean {
 
     public String sla = "json";
     public String isAjaxRequest="true";
-    public String token="4c079329";
+    public String token="f635fa38";
 }

@@ -50,7 +50,8 @@ public void TBLogin() {
 
 
 直通车
-pc链接：https://subway.simba.taobao.com/?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv#!/tool/traffic-analysis/index?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv&word=%E7%8E%A9%E5%85%B7&tabValue=trend
+pc链接：
+https://subway.simba.taobao.com/?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv#!/tool/traffic-analysis/index?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv&word=%E7%8E%A9%E5%85%B7&tabValue=trend
 //类目
 https://subway.simba.taobao.com/openapi/param2/1/gateway.subway/traffic/word/category$
 word: 广场
