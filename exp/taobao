@@ -19,17 +19,6 @@ https://api.chadianshang2.com/pc/keyword/getRelatedWordList
 post{keyword: "", cateId: "1625"}
 
 https://s.taobao.com/search?data-key=sort&data-value=default&ajax=true&_ksTS=1601432789650_730&callback=jsonp731&ie=utf8&initiative_id=staobaoz_20200930&stats_click=search_radio_all%3A1&js=1&imgfile=&q=%E5%B9%BF%E5%9C%BA%E8%88%9E%E5%A5%B3%E9%9E%8B&suggest=0_4&_input_charset=utf-8&wq=%E5%B9%BF%E5%9C%BA%E8%88%9E&suggest_query=%E5%B9%BF%E5%9C%BA%E8%88%9E&source=suggest
-https://s.taobao.com/search?data-key=sort&data-value=sale-desc&ajax=true&_ksTS=1602140588674_1581&callback=jsonp1582&q=%E8%BF%9E%E8%A1%A3%E8%A3%99%E5%A5%B3%E7%A7%8B%E5%AD%A3&imgfile=&commend=all&ssid=s5-e&search_type=item&sourceId=tb.index&spm=a21bo.2017.201856-taobao-item.1&ie=utf8&initiative_id=tbindexz_20170306&sort=sale-desc
-
-
-cookie: hng=CN%7Czh-CN%7CCNY%7C156; ali_ab=116.25.41.185.1552527712178.4; _uab_collina=155296220219425056146945; x=e%3D1%26p%3D*%26s%3D0%26c%3D0%26f%3D0%26g%3D0%26t%3D0%26__ll%3D-1%26_ato%3D0; thw=cn; tracknick=%5Cu8611%5Cu83C7%5Cu6D77%5Cu5CB8%5Cu6885%5Cu5E72%5Cu83DC; tg=0; miid=941350871299775747; enc=XPcGi30VUTWYb60gGE%2BCCZce14OLE0zUblUt3bov9OTtwsLgbMKSesPQsG5xim9nj%2FGcQTDfzY%2BGJpxo8E9fbw%3D%3D; sgcookie=EMSTqBWuKQHQRug57%2FjLf; _cc_=V32FPkk%2Fhw%3D%3D; cna=HXTCFx3oz08CAXQG6kKaW9aJ; UM_distinctid=1746d16b47721e-0bc1031dead47f-f7b1332-1fa400-1746d16b478b87; name=https://www.dianzhentan.com/dzt_cj/?type=update; CNZZDATA1277450732=2088128492-1562232353-https%253A%252F%252Fwww.taobao.com%252F%7C1602136758; t=45ca5b9f726c777936ef77c0dcfba18b; v=0; _tb_token_=e1108f77481bb; _m_h5_tk=2f8d6bd26a54eecdd115e957e95e0132_1602148124549; _m_h5_tk_enc=93dfecaf6e71671265febd8831fe9cd1; xlly_s=1; alitrackid=www.taobao.com; lastalitrackid=www.taobao.com; JSESSIONID=91C69854245F8B580FE59ACC8DF1EC66; tfstk=czlVBba_0IdqL8F6pSNNhAWJYkwAaB0mS_zQnAu5-DYd8C2aYs4fXzY5Xzz_vQ2c.; l=eBjxBFnlvmviUNEhBO5CFurza77T4IRb8sPzaNbMiInca6ThtFGrLNQ48K1kSdtjgtfXyetyNxVOSRCbun4dg2HvCbKrCyCkJxJ6-; isg=BHh4k4OZU6VBP7zUCiE3UzL-SSYK4dxrhpOXd7LpH7NmzRm3WvHS-QGrhcX9nZRD
-referer: https://s.taobao.com/search?ie=utf8&initiative_id=staobaoz_20201008&stats_click=search_radio_all%3A1&js=1&imgfile=&q=%E5%A5%B3%E7%A7%8B%E5%AD%A3%E8%BF%9E%E8%A1%A3%E8%A3%99&suggest=0_1&_input_charset=utf-8&wq=%E8%BF%9E%E8%A1%A3%E8%A3%99%E5%A5%B3%E7%A7%8B%E5%AD%A3&suggest_query=%E8%BF%9E%E8%A1%A3%E8%A3%99%E5%A5%B3%E7%A7%8B%E5%AD%A3&source=suggest
-sec-fetch-dest: script
-sec-fetch-mode: no-cors
-sec-fetch-site: same-origin
-user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36
-
-
 
 public void TBLogin() {
     singleThreadExecutor.execute(new Runnable() {
@@ -58,3 +47,91 @@ public void TBLogin() {
     });
 
 }
+
+
+直通车
+pc链接：https://subway.simba.taobao.com/?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv#!/tool/traffic-analysis/index?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv&word=%E7%8E%A9%E5%85%B7&tabValue=trend
+//类目
+https://subway.simba.taobao.com/openapi/param2/1/gateway.subway/traffic/word/category$
+word: 广场
+sla: json
+isAjaxRequest: true
+token: 79f481b1
+_referer: /tool/traffic-analysis/index?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv&word=%E5%B9%BF%E5%9C%BA&tabValue=trend
+-----------------------------------------------------------------------------------------------------------------
+:authority: subway.simba.taobao.com
+:method: POST
+:path: /openapi/param2/1/gateway.subway/traffic/word/category$
+:scheme: https
+accept: application/json, text/javascript, */*; q=0.01
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+content-length: 227
+content-type: application/x-www-form-urlencoded; charset=UTF-8
+cookie: hng=CN%7Czh-CN%7CCNY%7C156; ali_ab=116.25.41.185.1552527712178.4; x=e%3D1%26p%3D*%26s%3D0%26c%3D0%26f%3D0%26g%3D0%26t%3D0%26__ll%3D-1%26_ato%3D0; thw=cn; tracknick=%5Cu8611%5Cu83C7%5Cu6D77%5Cu5CB8%5Cu6885%5Cu5E72%5Cu83DC; tg=0; miid=941350871299775747; enc=XPcGi30VUTWYb60gGE%2BCCZce14OLE0zUblUt3bov9OTtwsLgbMKSesPQsG5xim9nj%2FGcQTDfzY%2BGJpxo8E9fbw%3D%3D; cna=HXTCFx3oz08CAXQG6kKaW9aJ; UM_distinctid=1746d16b47721e-0bc1031dead47f-f7b1332-1fa400-1746d16b478b87; t=45ca5b9f726c777936ef77c0dcfba18b; v=0; _tb_token_=e1108f77481bb; _m_h5_tk=2f8d6bd26a54eecdd115e957e95e0132_1602148124549; _m_h5_tk_enc=93dfecaf6e71671265febd8831fe9cd1; xlly_s=1; cookie2=1173df8bdb6b4ee2e228af945e4fafa6; _samesite_flag_=true; sgcookie=E100L9lssn%2BVdOhRL9mVXcg0BgX7%2FbtAaWRhbkYZXoIVRx30Tm21ncIGvkIB1wEs8k9fZAY1dtRJQd5gN%2B1nPticIg%3D%3D; unb=2514591913; uc3=nk2=p2q6hr51M%2Bont3WD02A%3D&vt3=F8dCufBCe4bFkDmbmOg%3D&id2=UU2zVEqgogX0Mg%3D%3D&lg2=WqG3DMC9VAQiUQ%3D%3D; csg=96cfb048; lgc=%5Cu8611%5Cu83C7%5Cu6D77%5Cu5CB8%5Cu6885%5Cu5E72%5Cu83DC; cookie17=UU2zVEqgogX0Mg%3D%3D; dnk=%5Cu8611%5Cu83C7%5Cu6D77%5Cu5CB8%5Cu6885%5Cu5E72%5Cu83DC; skt=8afdbf83527c46ca; existShop=MTYwMjE0Mzc1NA%3D%3D; uc4=nk4=0%40pVxB1gzRb0AR9CYcuytG82gGIMaCo6ssmQ%3D%3D&id4=0%40U2%2F0ltSUlboJizSIvShgBFl1d47o; _cc_=W5iHLLyFfA%3D%3D; _l_g_=Ug%3D%3D; sg=%E8%8F%9C32; _nk_=%5Cu8611%5Cu83C7%5Cu6D77%5Cu5CB8%5Cu6885%5Cu5E72%5Cu83DC; cookie1=UoCNL4MFFWFrkhlAB5YUWym%2FEPSqlBt0yOkXpuwI4eo%3D; uc1=existShop=true&cookie21=VT5L2FSpdeCjwGS%2FFqZpWg%3D%3D&cookie15=UtASsssmOIJ0bQ%3D%3D&cookie16=UtASsssmPlP%2Ff1IHDsDaPRu%2BPw%3D%3D&pas=0&cookie14=Uoe0b0TZN%2Bygqg%3D%3D; JSESSIONID=81D4846042DB5C95162C176FB013CCA2; tfstk=cwgNB3VbQFLayn4X2PaVfASgQKIdaUliiwP7jmlLqinGUwUQUsA1HWACHWPbeeqG.; l=eBjxBFnlvmviUjHvBO5Zlurza779yBAjGsPzaNbMiIncC6ewslv9iQ-QKmN5t9xRR8XVM6pD4QM06N2T8FZ0-ykbEZbMbblFxOLJIU8C.; isg=BE1N0LdjLlKzeImLl3q6ZOd1XGnHKoH8s4jCSI_UveUyhnk4eXiQzZ5Q8BrgRpm0
+origin: https://subway.simba.taobao.com
+referer: https://subway.simba.taobao.com/?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36
+x-requested-with: XMLHttpRequest
+
+相关词推荐
+word: 广场
+cateId: 50016472
+sla: json
+isAjaxRequest: true
+token: 79f481b1
+_referer: /tool/traffic-analysis/index?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv&word=%E5%B9%BF%E5%9C%BA&tabValue=trend
+-----------------------------------------------------------------------------------------------------------------
+header:
+https://subway.simba.taobao.com/openapi/param2/1/gateway.subway/traffic/related/word$
+:authority: subway.simba.taobao.com
+:method: POST
+:path: /openapi/param2/1/gateway.subway/traffic/related/word$
+:scheme: https
+accept: application/json, text/javascript, */*; q=0.01
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+content-length: 243
+content-type: application/x-www-form-urlencoded; charset=UTF-8
+cookie: hng=CN%7Czh-CN%7CCNY%7C156; ali_ab=116.25.41.185.1552527712178.4; x=e%3D1%26p%3D*%26s%3D0%26c%3D0%26f%3D0%26g%3D0%26t%3D0%26__ll%3D-1%26_ato%3D0; thw=cn; tracknick=%5Cu8611%5Cu83C7%5Cu6D77%5Cu5CB8%5Cu6885%5Cu5E72%5Cu83DC; tg=0; miid=941350871299775747; enc=XPcGi30VUTWYb60gGE%2BCCZce14OLE0zUblUt3bov9OTtwsLgbMKSesPQsG5xim9nj%2FGcQTDfzY%2BGJpxo8E9fbw%3D%3D; cna=HXTCFx3oz08CAXQG6kKaW9aJ; UM_distinctid=1746d16b47721e-0bc1031dead47f-f7b1332-1fa400-1746d16b478b87; t=45ca5b9f726c777936ef77c0dcfba18b; v=0; _tb_token_=e1108f77481bb; _m_h5_tk=2f8d6bd26a54eecdd115e957e95e0132_1602148124549; _m_h5_tk_enc=93dfecaf6e71671265febd8831fe9cd1; xlly_s=1; cookie2=1173df8bdb6b4ee2e228af945e4fafa6; _samesite_flag_=true; sgcookie=E100L9lssn%2BVdOhRL9mVXcg0BgX7%2FbtAaWRhbkYZXoIVRx30Tm21ncIGvkIB1wEs8k9fZAY1dtRJQd5gN%2B1nPticIg%3D%3D; unb=2514591913; uc3=nk2=p2q6hr51M%2Bont3WD02A%3D&vt3=F8dCufBCe4bFkDmbmOg%3D&id2=UU2zVEqgogX0Mg%3D%3D&lg2=WqG3DMC9VAQiUQ%3D%3D; csg=96cfb048; lgc=%5Cu8611%5Cu83C7%5Cu6D77%5Cu5CB8%5Cu6885%5Cu5E72%5Cu83DC; cookie17=UU2zVEqgogX0Mg%3D%3D; dnk=%5Cu8611%5Cu83C7%5Cu6D77%5Cu5CB8%5Cu6885%5Cu5E72%5Cu83DC; skt=8afdbf83527c46ca; existShop=MTYwMjE0Mzc1NA%3D%3D; uc4=nk4=0%40pVxB1gzRb0AR9CYcuytG82gGIMaCo6ssmQ%3D%3D&id4=0%40U2%2F0ltSUlboJizSIvShgBFl1d47o; _cc_=W5iHLLyFfA%3D%3D; _l_g_=Ug%3D%3D; sg=%E8%8F%9C32; _nk_=%5Cu8611%5Cu83C7%5Cu6D77%5Cu5CB8%5Cu6885%5Cu5E72%5Cu83DC; cookie1=UoCNL4MFFWFrkhlAB5YUWym%2FEPSqlBt0yOkXpuwI4eo%3D; uc1=existShop=true&cookie21=VT5L2FSpdeCjwGS%2FFqZpWg%3D%3D&cookie15=UtASsssmOIJ0bQ%3D%3D&cookie16=UtASsssmPlP%2Ff1IHDsDaPRu%2BPw%3D%3D&pas=0&cookie14=Uoe0b0TZN%2Bygqg%3D%3D; JSESSIONID=81D4846042DB5C95162C176FB013CCA2; tfstk=c7PVBb0s0sC2oPG1pjGwhoJm0GLRakz0SQuInRz-KdecaQhSYs4XX4bWX4usv_Dc.; l=eBjxBFnlvmviUjHvXO5Zlurza779yBAjGsPzaNbMiIncC6ewslv9iQ-QKmN5t9xRR8XVM6pD4QM06N2T8FZ0-ykbEZbMbblFxOLJIU8C.; isg=BE9P2MkdTDjljkuxOXSYHpEj3uNZdKOWhR6AEmFa37-kMHsyR0Yy50hmMmCOSHsO
+origin: https://subway.simba.taobao.com
+referer: https://subway.simba.taobao.com/?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36
+x-requested-with: XMLHttpRequest
+
+热搜词排名1、飙升词排名2、新词排名3（wordStatus不一样）
+https://subway.simba.taobao.com/openapi/param2/1/gateway.subway/traffic/cate/popular/word$
+wordStatus: 1
+cateId: 50016472
+word: 广场
+sla: json
+isAjaxRequest: true
+token: 79f481b1
+_referer: /tool/traffic-analysis/index?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv&word=%E5%B9%BF%E5%9C%BA&tabValue=trend
+-----------------------------------------------------------------------------------------------------------------
+header
+:authority: subway.simba.taobao.com
+:method: POST
+:path: /openapi/param2/1/gateway.subway/traffic/cate/popular/word$
+:scheme: https
+accept: application/json, text/javascript, */*; q=0.01
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+content-length: 256
+content-type: application/x-www-form-urlencoded; charset=UTF-8
+cookie: hng=CN%7Czh-CN%7CCNY%7C156; ali_ab=116.25.41.185.1552527712178.4; x=e%3D1%26p%3D*%26s%3D0%26c%3D0%26f%3D0%26g%3D0%26t%3D0%26__ll%3D-1%26_ato%3D0; thw=cn; tracknick=%5Cu8611%5Cu83C7%5Cu6D77%5Cu5CB8%5Cu6885%5Cu5E72%5Cu83DC; tg=0; miid=941350871299775747; enc=XPcGi30VUTWYb60gGE%2BCCZce14OLE0zUblUt3bov9OTtwsLgbMKSesPQsG5xim9nj%2FGcQTDfzY%2BGJpxo8E9fbw%3D%3D; cna=HXTCFx3oz08CAXQG6kKaW9aJ; UM_distinctid=1746d16b47721e-0bc1031dead47f-f7b1332-1fa400-1746d16b478b87; t=45ca5b9f726c777936ef77c0dcfba18b; v=0; _tb_token_=e1108f77481bb; _m_h5_tk=2f8d6bd26a54eecdd115e957e95e0132_1602148124549; _m_h5_tk_enc=93dfecaf6e71671265febd8831fe9cd1; xlly_s=1; cookie2=1173df8bdb6b4ee2e228af945e4fafa6; _samesite_flag_=true; sgcookie=E100L9lssn%2BVdOhRL9mVXcg0BgX7%2FbtAaWRhbkYZXoIVRx30Tm21ncIGvkIB1wEs8k9fZAY1dtRJQd5gN%2B1nPticIg%3D%3D; unb=2514591913; uc3=nk2=p2q6hr51M%2Bont3WD02A%3D&vt3=F8dCufBCe4bFkDmbmOg%3D&id2=UU2zVEqgogX0Mg%3D%3D&lg2=WqG3DMC9VAQiUQ%3D%3D; csg=96cfb048; lgc=%5Cu8611%5Cu83C7%5Cu6D77%5Cu5CB8%5Cu6885%5Cu5E72%5Cu83DC; cookie17=UU2zVEqgogX0Mg%3D%3D; dnk=%5Cu8611%5Cu83C7%5Cu6D77%5Cu5CB8%5Cu6885%5Cu5E72%5Cu83DC; skt=8afdbf83527c46ca; existShop=MTYwMjE0Mzc1NA%3D%3D; uc4=nk4=0%40pVxB1gzRb0AR9CYcuytG82gGIMaCo6ssmQ%3D%3D&id4=0%40U2%2F0ltSUlboJizSIvShgBFl1d47o; _cc_=W5iHLLyFfA%3D%3D; _l_g_=Ug%3D%3D; sg=%E8%8F%9C32; _nk_=%5Cu8611%5Cu83C7%5Cu6D77%5Cu5CB8%5Cu6885%5Cu5E72%5Cu83DC; cookie1=UoCNL4MFFWFrkhlAB5YUWym%2FEPSqlBt0yOkXpuwI4eo%3D; uc1=existShop=true&cookie21=VT5L2FSpdeCjwGS%2FFqZpWg%3D%3D&cookie15=UtASsssmOIJ0bQ%3D%3D&cookie16=UtASsssmPlP%2Ff1IHDsDaPRu%2BPw%3D%3D&pas=0&cookie14=Uoe0b0TZN%2Bygqg%3D%3D; JSESSIONID=81D4846042DB5C95162C176FB013CCA2; tfstk=c7PVBb0s0sC2oPG1pjGwhoJm0GLRakz0SQuInRz-KdecaQhSYs4XX4bWX4usv_Dc.; l=eBjxBFnlvmviUjHvXO5Zlurza779yBAjGsPzaNbMiIncC6ewslv9iQ-QKmN5t9xRR8XVM6pD4QM06N2T8FZ0-ykbEZbMbblFxOLJIU8C.; isg=BE9P2MkdTDjljkuxOXSYHpEj3uNZdKOWhR6AEmFa37-kMHsyR0Yy50hmMmCOSHsO
+origin: https://subway.simba.taobao.com
+referer: https://subway.simba.taobao.com/?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36
+x-requested-with: XMLHttpRequest
+
+

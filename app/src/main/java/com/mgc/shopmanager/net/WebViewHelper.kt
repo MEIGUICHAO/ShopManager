@@ -64,7 +64,7 @@ object WebViewHelper {
 
                 // 在结束加载网页时会回调
                 // 获取页面内容
-                view?.loadUrl(getHtmlContentStr)
+//                view?.loadUrl(getHtmlContentStr)
 
                 super.onPageFinished(view, url)
             }

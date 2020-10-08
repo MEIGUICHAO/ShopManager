@@ -15,6 +15,9 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 
 object RetrofitManager {
+    val urlInterceptor by lazy {
+        BaseUrlInterceptor()
+    }
 
     val reqApi by lazy {
 
@@ -23,7 +26,7 @@ object RetrofitManager {
         //Okhttp对象
         var okHttpClient = OkHttpClient.Builder()
             .addInterceptor(httpLoggingInterceptor)
-            .addInterceptor(BaseUrlInterceptor())
+            .addInterceptor(urlInterceptor)
             .build()
         var gson = Gson()
         val retrofit =

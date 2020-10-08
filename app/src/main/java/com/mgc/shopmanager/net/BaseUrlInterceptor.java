@@ -1,6 +1,8 @@
 package com.mgc.shopmanager.net;
 
 
+import android.text.TextUtils;
+
 import com.mgc.shopmanager.utils.LogUtil;
 
 import java.io.IOException;
@@ -12,6 +14,16 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class BaseUrlInterceptor implements Interceptor {
+
+    public String cookie = "";
+
+    public String getCookie() {
+        return cookie;
+    }
+
+    public void setCookie(String cookie) {
+        this.cookie = cookie;
+    }
 
     @Override
     public Response intercept(Chain chain) throws IOException {
@@ -39,6 +51,10 @@ public class BaseUrlInterceptor implements Interceptor {
         if (cookieType.size() > 0) {
             builder.removeHeader("Cookie");
             builder.addHeader("Cookie", cookieType.get(0));
+        }
+        if (!TextUtils.isEmpty(cookie)) {
+            builder.addHeader("Cookie", cookie);
+            cookie = "";
         }
         if (headerValues.size() > 0) {
             //如果有这个header，先将配置的header删除，因此header仅用作app和okhttp之间使用
