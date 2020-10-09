@@ -40,7 +40,7 @@ abstract class BaseActivity : AppCompatActivity(), EasyPermissions.PermissionCal
         startActivity(intent)
     }
 
-    protected fun showToast(msg: String) {
+    fun showToast(msg: String) {
         Toast.makeText(applicationContext,msg,Toast.LENGTH_SHORT).show()
     }
 
