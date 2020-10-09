@@ -26,7 +26,9 @@ class MainActivity : BaseViewModelActivity<TestViewModel>() {
 //        SPUtils.putValue(Constants.Cookies,Datas.cookie)
         WebViewHelper.initWb(webView)
 //        LogUtil.d("cookie:${SPUtils.getValue(Constants.Cookies)}")
-        webView.loadUrl("https://www.taobao.com/?spm=a21bo.2017.201857.1.5af911d98BHoqC")
+//        webView.loadUrl("https://www.taobao.com/?spm=a21bo.2017.201857.1.5af911d98BHoqC")
+        webView.loadUrl("https://subway.simba.taobao.com/?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv#!/tool/traffic-analysis/index?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv&word=%E7%8E%A9%E5%85%B7&tabValue=trend")
+
     }
 
     override fun getLayout(): Int = R.layout.activity_main
