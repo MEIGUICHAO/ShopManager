@@ -16,7 +16,7 @@ class KotlinDataAdapter<T> private constructor() : RecyclerView.Adapter<KotlinDa
     //布局id
     private var mLayoutId: Int? = null
     //绑定事件的lambda放发
-    private var addBindView: ((View, T) -> Unit)? = null
+    private var addBindView: ((View, T,Int) -> Unit)? = null
     //view被点击
     private var itemClick: ((View, T) -> Unit)? = null
 
@@ -30,7 +30,7 @@ class KotlinDataAdapter<T> private constructor() : RecyclerView.Adapter<KotlinDa
     }
 
     override fun onBindViewHolder(p0: MyViewHolder, p1: Int) {
-        addBindView?.invoke(p0.itemView, mDatalist?.get(p1)!!)
+        addBindView?.invoke(p0.itemView, mDatalist?.get(p1)!!,p1)
         p0.itemView.setOnClickListener { itemClick?.invoke(it, mDatalist?.get(p1)!!) }
     }
 
@@ -62,7 +62,7 @@ class KotlinDataAdapter<T> private constructor() : RecyclerView.Adapter<KotlinDa
         /**
          * 绑定View和数据
          */
-        fun addBindView(itemBind: ((itemView: View, itemData: B) -> Unit)): Builder<B> {
+        fun addBindView(itemBind: ((itemView: View, itemData: B,pos:Int) -> Unit)): Builder<B> {
             adapter.addBindView = itemBind
             return this
         }
