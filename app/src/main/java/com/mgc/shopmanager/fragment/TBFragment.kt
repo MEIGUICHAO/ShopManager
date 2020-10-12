@@ -10,7 +10,7 @@ class TBFragment:BaseVMFragment<TBViewModel>() {
     override fun providerVMClass(): Class<TBViewModel> = TBViewModel::class.java
 
     override fun initDatas() {
-
+        viewModel.foreachLHDatas()
     }
 
     override fun initView() {

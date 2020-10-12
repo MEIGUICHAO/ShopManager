@@ -83,9 +83,14 @@ interface RequestService {
     )
     @FormUrlEncoded
     @POST("/openapi/param2/1/gateway.subway/traffic/word/category$")
-    suspend fun getZTCCategory(@Field("word") word: String,@Field("_referer") _referer: String = "/tool/traffic-analysis/index?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv&word=${Datas.shopName}&tabValue=trend"
-    ,@Field("isAjaxRequest") isAjaxRequest:String="true",@Field("sla") sla:String="json",@Field("token") token:String="f635fa38"): ResponseData<String>
-
+    suspend fun getZTCCategory(
+        @Field("word") word: String,
+        @Field("_referer") _referer: String = "/tool/traffic-analysis/index?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv&word=${Datas.shopName}&tabValue=trend"
+        ,
+        @Field("isAjaxRequest") isAjaxRequest: String = "true",
+        @Field("sla") sla: String = "json",
+        @Field("token") token: String = "f635fa38"
+    ): ResponseData<String>
 
 
     @Headers(
@@ -103,8 +108,16 @@ interface RequestService {
     )
     @FormUrlEncoded
     @POST("/openapi/param2/1/gateway.subway/traffic/related/word$")
-    suspend fun getZTCRelatedWord(@Field("word") word: String,@Field("wordStatus") wordStatus:String,@Field("cateId") cateId: String,@Field("_referer") _referer: String = "/tool/traffic-analysis/index?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv&word=${Datas.shopName}&tabValue=trend"
-    ,@Field("isAjaxRequest") isAjaxRequest:String="true",@Field("sla") sla:String="json",@Field("token") token:String="f635fa38"): ResponseData<String>
+    suspend fun getZTCRelatedWord(
+        @Field("word") word: String,
+        @Field("wordStatus") wordStatus: String,
+        @Field("cateId") cateId: String,
+        @Field("_referer") _referer: String = "/tool/traffic-analysis/index?spm=a2e2i.11816827.0.homequick11816967.39c36abbQv9Iiv&word=${Datas.shopName}&tabValue=trend"
+        ,
+        @Field("isAjaxRequest") isAjaxRequest: String = "true",
+        @Field("sla") sla: String = "json",
+        @Field("token") token: String = "f635fa38"
+    ): ResponseData<String>
 
     @Headers(
         "urlname:${Datas.ztc}",
@@ -116,4 +129,9 @@ interface RequestService {
     @GET("/bpenv/getLoginUserInfo.htm")
     suspend fun getLoginUserInfo(): ResponseData<String>
 
+    @Headers("urlname:${Datas.aliUrl}")
+    @GET("/alizs/market.htm")
+    suspend fun getAlizs(): String
+
 }
+
