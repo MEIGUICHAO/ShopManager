@@ -8,6 +8,7 @@ import android.widget.RelativeLayout
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.graphics.drawable.DrawerArrowDrawable
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.mgc.shopmanager.adapter.KotlinDataAdapter
@@ -28,16 +29,17 @@ class MainActivity : BaseViewModelActivity<TestViewModel>() {
     private val vpAdapter by lazy {
         ViewPageAdapter(supportFragmentManager, fragments)
     }
+    var curPostion = 0
 
     override fun initDatas() {
-//        viewModel.getDatas().observe(this, Observer {
-//
-//        })
+        viewModel.getDatas().observe(this, Observer {
+
+        })
     }
 
     override fun initView() {
         flVp.adapter = vpAdapter
-        flVp.setCurrentItem(0)
+        flVp.setCurrentItem(curPostion)
         rcvMain.layoutManager = LinearLayoutManager(applicationContext,RecyclerView.VERTICAL,false)
         rcvMain.adapter = createAdapter()
 

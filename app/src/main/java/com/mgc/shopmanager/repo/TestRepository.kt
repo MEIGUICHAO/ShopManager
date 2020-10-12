@@ -16,7 +16,7 @@ class TestRepository:BaseRepository() {
         RetrofitManager.urlInterceptor.setCookie(SPUtils.getValue(Constants.Cookies))
 //        RetrofitManager.reqApi.getTitleKeyWord("连衣裙女秋季","连衣裙女秋季","连衣裙女秋季")
 //        RetrofitManager.reqApi.getZTCRelatedWord(Datas.shopName,"1","50023504")
-        RetrofitManager.reqApi.getLoginUserInfo()
+        RetrofitManager.reqApi.getTBXialaSuggest("连衣裙女秋季")
 
     }
 

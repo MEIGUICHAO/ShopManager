@@ -5,6 +5,7 @@ import com.mgc.shopmanager.base.BaseVMFragment
 import com.mgc.shopmanager.vm.TBViewModel
 
 class TBFragment:BaseVMFragment<TBViewModel>() {
+    
 
     override fun providerVMClass(): Class<TBViewModel> = TBViewModel::class.java
 

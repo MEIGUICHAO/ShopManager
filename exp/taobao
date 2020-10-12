@@ -18,6 +18,10 @@ post{keyword: ""}
 https://api.chadianshang2.com/pc/keyword/getRelatedWordList
 post{keyword: "", cateId: "1625"}
 
+https://www.taotaohuitong.com/views/user/user.html
+https://www.dianshangdanao.com/views/search/productTool.html?productTool=keyword
+
+
 https://s.taobao.com/search?data-key=sort&data-value=default&ajax=true&_ksTS=1601432789650_730&callback=jsonp731&ie=utf8&initiative_id=staobaoz_20200930&stats_click=search_radio_all%3A1&js=1&imgfile=&q=%E5%B9%BF%E5%9C%BA%E8%88%9E%E5%A5%B3%E9%9E%8B&suggest=0_4&_input_charset=utf-8&wq=%E5%B9%BF%E5%9C%BA%E8%88%9E&suggest_query=%E5%B9%BF%E5%9C%BA%E8%88%9E&source=suggest
 
 public void TBLogin() {
@@ -134,5 +138,17 @@ sec-fetch-mode: cors
 sec-fetch-site: same-origin
 user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36
 x-requested-with: XMLHttpRequest
+
+
+
+https://page.1688.com/jdata/228483.jsonp?callback=callback
+https://index.1688.com/alizs/market.htm?userType=purchaser&cat=64
+https://index.1688.com/alizs/market.htm?userType=purchaser&cat=10166,1048182
+1、销量进行排序，看看第一页最后一款宝贝是否在1000以上（如果你卖两三千的家具，那你看首页最后一个，超过100笔就可以做了）
+2、第5页的销量，比如2869的销量，做到这个销量只能排到第五页，那竞争是非常大的，竞争大也看类目，如果是标品，那就不适合去做，如果是非标品，每家每户卖的产品不一样，价格不透明，那就可以去做
+3、进入直通车——工具——流量解析——搜索产品词——选择过去一年，看他不同时间的展现量如何，判断下你如果现在去做还可以，是上升的你可以去做，下滑的话你还做他干啥，所以有的时候1688的数据他也不是特别精准，我们要从多方面的渠道去进行核实
+4、进生意参谋——市场——搜索分析——7天，选中搜索人气，点击率，支付转化率，在线商品数商城店及占比，在线商品数按从小到大进行排序，看前50个关键词搜索人气是不是大于在线商品数的，那就是咱们可以去做的，因为我们前期，这些词是可以给我们引流的。
+
+
 
 

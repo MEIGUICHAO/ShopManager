@@ -11,7 +11,9 @@ class TestViewModel:BaseViewModel() {
     val repository = TestRepository()
     val datas:MutableLiveData<String> by lazy { MutableLiveData<String>().also { loadDatas() } }
 
+
     fun getDatas():LiveData<String> {
+
 
         return datas
     }
