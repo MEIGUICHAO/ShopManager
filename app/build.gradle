@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
 
 android {
     compileSdkVersion 29
@@ -22,9 +24,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
+
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.1'
@@ -51,4 +55,8 @@ dependencies {
 
     implementation 'org.jsoup:jsoup:1.13.1'
     implementation 'com.google.android.material:material:1.2.1'
+
+    implementation "androidx.room:room-runtime:2.2.0-rc01"
+// For Kotlin use kapt instead of annotationProcessor (注意这个注释)
+    kapt "androidx.room:room-compiler:2.2.0-rc01"
 }
